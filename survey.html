@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <title>MathAddicts - Опитувальник</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="SHORTCUT ICON" href="images/calc_icon.ico" type="image/x-icon">
+
+        <!--FontAwesome - для іконок-->
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
+    </head>
+    <body>
+    <header>
+        <div>
+            <img src="images/output-onlinegiftools.gif" alt="Завантажте іконку!">&nbsp;
+            <a href="index.html">MathAddicts</a>
+        </div>
+        <div>
+            <span><a href="news.html">Новини/Статті</a></span>
+            <span><a href="survey.html">Опитувальник</a></span>
+            <span><a href="look_for_theorems.html">Пошук теорем</a></span>
+            <div>
+                <div>Про нас&ensp;<i class="fa fa-caret-down"></i></div>
+                <div>
+                    <div><a href="about_us.html">Наша історія</a></div>
+                    <div><a href="about_partners.html">Наші партнери</a></div>
+                </div>
+            </div>
+            <div>
+                <label for="searchInput"><i class="fa fa-search"></i></label>
+                <input id="searchInput" type="search" placeholder="Search"/>
+            </div>
+            <span><a href="signin.html">Ввійти до акаунту</a></span>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div>
+                <div>
+                    <div>
+                        <label for = "email">Адреса електронної пошти</label><br/>
+                        <input type = "email" id = "email" required placeholder = "Math_Addict@gmail.com"><br/><br/>
+                        <label for = "login">Ім'я користувача</label><br/>
+                        <input id = "login" type = "text" required placeholder = "Math_Addict"><br/><br/>
+                        <label for = "select_list">Виберіть Вашу освітню роль:</label><br/>
+                        <select id = "select_list">
+                            <option value = "pupil" selected>Учень</option>
+                            <option value = "student">Студент</option>
+                            <option value = "teacher">Вчитель</option>
+                            <option value = "other">Інше</option>
+                        </select><br/><br/>
+                    </div>
+                    <div>
+                        <label for = "radio_question">Як часто Ви відвідуєте наш сайт?</label>
+                        <br/><br/>
+                        <span id="radio_question">
+                            <label for="option1"><input type="radio" id="option1" name="time"/>1 раз на 3 дні</label>
+                            <label for="option2"><input type="radio" id="option2" name="time"/>1 раз на тиждень</label>
+                            <label for="option3"><input type="radio" id="option3" name="time"/>1 раз на місяць</label>
+                            <label for="option4"><input type="radio" id="option4" name="time"/>рідше</label>
+                        </span><br/>
+                        <label for = "radio_question1">Чи все Вам сподобалось на нашому порталі?</label>
+                        <br/><br/>
+                        <span id="radio_question1">
+                            <label for="option5"><input type="radio" id="option5" name="y/n"/>Так</label>
+                            <label for="option6"><input type="radio" id="option6" name="y/n"/>Ні</label>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for = "review">Залишіть Ваш відгук про наш сервіс:</label><br/>
+                        <textarea id = "review" rows = "4" cols = "50" placeholder = "Ваш відгук..."></textarea><br/><br/>
+                        <label for = "fixing_site_problems">Допоможіть нам стати краще! Що, на Вашу думку, має бути покращене в нашому сервісі (розгорнуту відповідь можна надати в наступному текстовому полі)</label><br/>
+                        <fieldset id="fixing_site_problems">
+                            <label><input type="checkbox" name="checkbox" value="interface"/>Інтерфейс</label>
+                            <label><input type="checkbox" name="checkbox" value="quality_of_work"/>Якість роботи працівників</label>
+                            <label><input type="checkbox" name="checkbox" value="quality_of_teaching"/>Якість викладання матеріалу</label>
+                            <label><input type="checkbox" name="checkbox" value="speed_of_response"/>Швидкість зворотного зв'язку</label>
+                            <label><input type="checkbox" name="checkbox" value="number_of_theorems"/>Кількість теорем на сайті</label>
+                            <label><input type="checkbox" name="checkbox" value="increase_the_number_of_subjects"/>Кількість предметів, що охоплює сайт (або введення тем для студентів університету)</label>
+                            <label><input type="checkbox" name="checkbox" value="speed_of_site"/>Швидкість роботи сайту</label>
+                            <label><input type="checkbox" name="checkbox" value="safety_and_different_modes"/>Безпека, різні режими для людей з обмеженими можливостями та темна тема</label>
+                        </fieldset>
+                        <label for = "more">Розгорнута відповідь для покращення сервісу:</label><br/>
+                        <textarea id = "more" rows = "4" cols = "50" placeholder = "Додаткова інформація..."></textarea>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Відправити</button>
+                <button type="reset">Скинути</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <a href="news.html">Новини/Статті</a>
+                <a href="survey.html">Опитувальник</a>
+                <a href="look_for_theorems.html">Пошук теорем</a>
+                <a href="about_us.html">Про нас</a>
+            </div>
+            <div>
+                <div><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;dubchak.oleksandr@chnu.edu.ua</div>
+                <div><i class="fa fa-phone" aria-hidden="true"></i> +38 (050) 123 45 67</div>
+                <div><i class="fa fa-building-o"></i> &nbsp;MathAddicts Inc.</div>
+                <div>вул. Університетська, 28</div>
+                <div> м. Чернівці, Чернівецька область, 58000</div>
+                <div>Україна</div>
+            </div>
+        </div>
+        <div>
+            <span>Place your cursor here &rarr;&nbsp;&nbsp; Copyright &#169; 2024 MathAddicts. All rights reserved. &nbsp;&nbsp;&larr; Place your cursor here</span>
+        </div>
+    </footer>
+    </body>
+</html>
